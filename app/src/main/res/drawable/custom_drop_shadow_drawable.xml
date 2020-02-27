@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--the shadow comes from here-->
+    <item android:state_pressed="true">
+    <shape>
+        <solid android:color="@android:color/darker_gray" />
+        <stroke android:width="2dp" android:color="@color/color_see_all_unselected"/>
+        <corners android:radius="1dp"/>
+    </shape>
+
+    </item>
+
+    <item>
+        <!--whatever you want in the background, here i preferred solid white -->
+        <shape >
+
+            <solid android:color="@color/color_see_all_pressed" />
+            <corners android:radius="1dp"/>
+
+        </shape>
+    </item>
+</selector>

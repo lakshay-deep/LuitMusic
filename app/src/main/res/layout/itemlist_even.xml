@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:id="@+id/linearEven"
+              android:layout_height="wrap_content"
+              android:elevation="0dp"
+              android:focusable="false"
+              android:padding="2dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="match_parent"
+        android:id="@+id/networkImageView1"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="New Text"
+        android:id="@+id/textEven"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:paddingEnd="2dp"
+        android:paddingStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="42dp"
+        android:elevation="7dp"
+        android:shadowDx="0.3"
+        android:shadowDy="0.5"
+        android:shadowRadius="0.5" />
+</LinearLayout>

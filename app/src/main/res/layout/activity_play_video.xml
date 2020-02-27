@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.vianet.musicplayer.YoutubePlayer">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtubeplayerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentTop="true"/>
+
+
+    <!--<Chronometer-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/ct"-->
+    <!--/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/t1"
+            android:minWidth="50dp"
+            android:textColor="#ffffffff"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <SeekBar
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:minWidth="200dp"
+            android:layout_toRightOf="@+id/t1"
+            android:layout_toEndOf="@+id/t1"
+            android:layout_toLeftOf="@+id/imageButton3"
+            android:layout_toStartOf="@+id/imageButton3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/t2"
+            android:minWidth="50dp"
+            android:textColor="#ffffffff"
+            android:layout_alignTop="@+id/t1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton3"
+            android:minWidth="30dp"
+            android:background="@android:color/transparent"
+            android:minHeight="25dp"
+            android:src="@drawable/pp"
+            android:layout_alignTop="@+id/t2"
+            android:layout_toLeftOf="@+id/t2"
+            android:layout_toStartOf="@+id/t2"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

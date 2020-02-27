@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              tools:context="com.vianet.musicplayer.VideosList"
+              android:orientation="vertical"
+              android:background="@color/background_color">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/aa"
+        android:layout_alignParentTop="true">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/albumImage"
+            android:clickable="true"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/albumName"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </FrameLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridSongs"
+        android:numColumns="2"
+        android:padding="2dp"
+        android:background="@color/background_color"
+        android:layout_below="@+id/aa"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
